@@ -578,8 +578,8 @@ body.nav-opened .site-wrapper {
     position: relative;
     display: table;
     width: 100%;
-    height: 100vh;
-    margin-bottom: 5rem;
+    height: 50vh;
+    margin-bottom: 10rem;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
@@ -840,20 +840,14 @@ body.nav-opened .nav {
 
 /* Appears in the top left corner of your home page */
 .blog-logo {
+    color: #9EABB3;
     display: block;
     float: left;
-    background: none !important; /* Makes sure there is never a background */
-    border: none !important; /* Makes sure there is never a border */
+    transition: all 0.5s ease;
 }
 
-.blog-logo img {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    height: 38px;
-    padding: 1px 0 5px 0;
-    width: auto;
+.overlay > .blog-logo {
+    color: #ffffff;
 }
 
 .menu-button {
@@ -1228,18 +1222,11 @@ body:not(.post-template) .post-title {
     color: #111;
 }
 
-/* Create some space to the right for the share links */
-.post-footer .author {
-    margin-right: 180px;
-}
-
-.post-footer h4 a {
+.post-footer h4 {
+    font-size: 1.3rem;
     color: #2e2e2e;
     text-decoration: none;
-}
-
-.post-footer h4 a:hover {
-    text-decoration: underline;
+    padding: 0;
 }
 
 /* Drop the share links in the space to the right.
@@ -1250,13 +1237,12 @@ body:not(.post-template) .post-title {
     position: absolute;
     top: 3rem;
     right: 0;
-    width: 140px;
 }
 
 .post-footer .share a {
     font-size: 1.8rem;
     display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
+    margin: 0.4rem 1.6rem 0 0;
     color: #BBC7CC;
     text-decoration: none;
 }
@@ -1763,10 +1749,6 @@ body:not(.post-template) .post-title {
         padding: 10% 0;
     }
 
-    .blog-logo img {
-        padding: 4px 0;
-    }
-
     .page-title {
         font-size: 4rem;
         letter-spacing: -1px;
@@ -1914,11 +1896,7 @@ body:not(.post-template) .post-title {
     .blog-logo {
         padding: 5px;
     }
-
-    .blog-logo img {
-        height: 30px;
-    }
-
+    
     .menu-button {
         padding: 0 5px;
         border-radius: 0;
